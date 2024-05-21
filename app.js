@@ -7,7 +7,7 @@ const cors = require("cors");
 const constants = require("./src/constants");
 
 const front = {
-  origin: "https://ignite-cravings.vercel.app/menu",
+  origin: "https://ignite-cravings.vercel.app",
   credentials: true,
 };
 
