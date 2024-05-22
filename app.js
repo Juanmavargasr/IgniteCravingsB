@@ -13,7 +13,7 @@ const front = {
 
 const port = process.env.SECRET_PORT;
 const productosRouter = require("./src/routes/productosRoutes");
-// const authRoutes = require("./src/routes/authRoutes");
+const categoriasRouter = require("./src/routes/categoriasRoutes");
 
 app.use(express.json());
 app.use(morgan("dev"));
@@ -36,6 +36,9 @@ app.use((req, res, next) => {
 });
 
 app.use("/productos", productosRouter);
+
+app.use("/categorias", categoriasRouter);
+
 // app.use("/logIn", authRoutes);
 
 connectDB();
